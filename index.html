@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="#accueil">MonPortfolio</a>
+            </div>
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bonjour, je suis <span class="highlight">Scotty NDANGA</span></h1>
+                <p>Développeur passionné créant des expériences web exceptionnelles et des jeux vidéo exceptionnelles
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Asset/SCOTTY.jpg" alt="Photo de Scotty NDANGA" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="a-propos" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Je suis un développeur web passionné, avec une solide expérience dans la création de sites
+                        modernes et d’applications performantes. J’aime concevoir des interfaces claires, esthétiques et
+                        intuitives qui rendent la technologie accessible à tous.</p>
+                    <p>En parallèle, je suis également programmeur de jeux vidéo, ce qui me permet de combiner
+                        créativité, logique et technique pour donner vie à des univers interactifs. J’aime relever le
+                        défi d’allier design, gameplay et performance pour offrir des expériences immersives.</p>
+                    <p>Lorsque je ne code pas, vous pouvez me trouver sur un terrain de basket, plongé dans un manga,
+                        manette en main devant un bon jeu vidéo, ou encore en train de découvrir de nouveaux musées et
+                        pièces de théâtre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <h2 class="section-title">Mes compétences</h2>
+
+            <!-- Frontend -->
+            <h3 class="skills-subtitle">Language</h3>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/logo html.webp" alt="HTML Logo">
+                    </div>
+                    <h4>HTML</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/bootstrap-social-media-icons-html-css-js-logo-11563293145uql7yehdq3.png"
+                            alt="CSS Logo">
+                    </div>
+                    <h4>CSS</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/js.webp" alt="JavaScript Logo">
+                    </div>
+                    <h4>JavaScript</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/c.png" alt="C Logo">
+                    </div>
+                    <h4>C</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/C#.png" alt="C# Logo">
+                    </div>
+                    <h4>C#</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/PY.webp" alt="Python Logo">
+                    </div>
+                    <h4>Python</h4>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <h3 class="skills-subtitle">FrameWork and DataBases</h3>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/node.jpg" alt="Node.js Logo">
+                    </div>
+                    <h4>Node.js</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/React.jpg" alt="React Logo">
+                    </div>
+                    <h4>React</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/DB.png" alt="Mongo DB Logo">
+                    </div>
+                    <h4>Mongo DB</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/sql.png" alt="MySQL Logo">
+                    </div>
+                    <h4>MySQL</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/Flask.png" alt="Flask Logo">
+                    </div>
+                    <h4>Flask</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/FireBase.png" alt="Firebase Logo">
+                    </div>
+                    <h4>Firebase</h4>
+                </div>
+            </div>
+
+            <!-- Data -->
+            <h3 class="skills-subtitle">Tools and Supports</h3>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/vscode.png" alt="VsCode Logo">
+                    </div>
+                    <h4>VsCode</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/git.png" alt="GitHub Logo">
+                    </div>
+                    <h4>GitHub</h4>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-logo">
+                        <img src="Asset/postman.png" alt="Postman Logo">
+                    </div>
+                    <h4>Postman</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projets -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Asset/mini-400x300.jpg" alt="Projet 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Projet 1</h3>
+                        <p>Description concise du projet et des technologies utilisées.</p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Unity</span>
+                            <span class="tag">Blender</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projet1.html" class="project-link" target="_blank">Voir le projet</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Asset/GAMEPIX-400x300.jpg" alt="Projet 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Projet 2</h3>
+                        <p>Description concise du projet et des technologies utilisées.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="gamepix.html" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>scottyndanga02400@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>06 25 59 61 66</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Localisation</h3>
+                            <p>France</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+
+                <div id="alertBox" style="display:none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                <p>&copy; 2025 Scotty NDANGA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Chargement des scripts JavaScript -->
+    <script src="js/emailjs-config.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/form-submission.js"></script>
+</body>
+
+</html>

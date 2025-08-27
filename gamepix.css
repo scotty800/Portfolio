@@ -1,0 +1,114 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", "Poppins", sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Bouton retour */
+header .btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid #9b4dff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #9b4dff, #1e90ff);
+    transition: 0.3s ease;
+}
+header .btn:hover {
+    background: linear-gradient(135deg, #ff00ff, #8a2be2);
+    box-shadow: 0 0 15px #9b4dff, 0 0 25px #ff00ff;
+}
+
+/* Titres */
+h1, h2 {
+    color: #9b4dff;
+    text-shadow: 0 0 10px #9b4dff, 0 0 20px #ff00ff;
+    margin-bottom: 15px;
+}
+
+/* Texte */
+p, li {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 10px auto;
+    color: #ddd;
+}
+
+/* Galerie */
+.media-gallery {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.media-gallery img,
+.media-gallery video {
+    width: 100%;
+    height: 220px; /* même hauteur pour tout */
+    object-fit: cover; /* recadre joliment */
+    border-radius: 12px;
+    border: 2px solid #9b4dff;
+    box-shadow: 0 0 15px #9b4dff, 0 0 30px #ff00ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-gallery img:hover,
+.media-gallery video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff00ff, 0 0 40px #1e90ff;
+}
+
+
+/* Tags techno */
+.tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #9b4dff, #1e90ff);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px #9b4dff;
+    transition: 0.3s;
+}
+.tag:hover {
+    background: linear-gradient(135deg, #ff00ff, #9b4dff);
+    box-shadow: 0 0 20px #ff00ff, 0 0 30px #1e90ff;
+}
+
+/* Liens projet */
+.project-links {
+    margin-top: 20px;
+}
+.project-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    background: linear-gradient(135deg, #1e90ff, #9b4dff);
+    color: #fff;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #9b4dff;
+}
+.project-link:hover {
+    background: linear-gradient(135deg, #ff00ff, #8a2be2);
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #1e90ff;
+}

@@ -1,0 +1,147 @@
+/* ====== Reset rapide ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== Fond style asphalte ====== */
+body {
+  font-family: 'Orbitron', sans-serif; /* police futuriste type racing */
+  background: radial-gradient(circle at top, #2c2c2c, #121212);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* ====== Header ====== */
+header {
+  background: linear-gradient(90deg, #d90429, #ffba08);
+  padding: 1rem;
+  text-align: left;
+}
+
+header .btn {
+  text-decoration: none;
+  background: #121212;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+header .btn:hover {
+  background: #ffba08;
+  color: #121212;
+}
+
+/* ====== Main Content ====== */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,0,0,0.4);
+}
+
+/* Titres */
+main h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffba08;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem;
+  color: #d90429;
+  border-left: 4px solid #ffba08;
+  padding-left: 8px;
+}
+
+/* Paragraphes et listes */
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+main ul {
+  margin-left: 2rem;
+}
+
+main ul li {
+  list-style-type: "🏁 ";
+  margin: 0.3rem 0;
+}
+
+/* Image projet */
+main img {
+  display: block;
+  margin: 2rem auto;
+  border-radius: 12px;
+  border: 3px solid #ffba08;
+  box-shadow: 0 0 15px rgba(255,186,8,0.6);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+main img:hover {
+  transform: scale(1.05);
+}
+
+/* Tags (technos utilisées) */
+.tag {
+  display: inline-block;
+  background: #d90429;
+  color: #fff;
+  padding: 0.3rem 0.7rem;
+  margin: 0.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Liens projet */
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  text-decoration: none;
+  background: #ffba08;
+  color: #121212;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.project-link:hover {
+  background: #d90429;
+  color: #fff;
+}
+
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.media-gallery img,
+.media-gallery video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.media-gallery img:hover,
+.media-gallery video:hover {
+    transform: scale(1.05);
+}
